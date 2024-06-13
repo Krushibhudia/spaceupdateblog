@@ -1,0 +1,291 @@
+.login {
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    background-color: var(--second-color);
+    color: var(--bg-color);
+  }
+  .login:hover {
+    background: hsl(192, 98%, 58%);
+    transition: 0.3s;
+  }
+     
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  section .imgbox{
+    position: relative;
+    width: 50%;
+    height: 100%;
+  } 
+  section .imgbox::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg,var(--second-color),#83a9f4);
+    z-index: 1;
+    mix-blend-mode: screen;  
+}
+  section .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  section .contentbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+  section .contentbox .loginformbox {
+    width: 50%;
+  }
+  section .contentbox .loginformbox h2 {
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid var(--second-color);
+    display: inline-block;
+  }
+  section .contentbox .loginformbox .inputbox {
+    margin-bottom: 20px;
+  }
+  section .contentbox .loginformbox .inputbox h2{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607db8;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  section .contentbox .loginformbox .inputbox input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+  }
+  section .contentbox .loginformbox .inputbox input[type="submit"]{
+    background: var(--second-color);
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  section .contentbox .loginformbox .inputbox input[type="submit"]:hover{
+    background: var(--second-color);
+  }
+  section.contentbox .loginformbox .remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  section .contentbox .loginformbox .inputbox p {
+    color: #607d8b;
+  }
+  section .contentbox .loginformbox .inputbox p a{
+    color: var(--second-color);
+  }
+  section .contentbox .loginformbox h3{
+    color: #607d8b;
+    text-align: center;
+    margin: 80px 0 10px;
+    font-weight: 500;
+  }
+  section .contentbox .loginformbox .sociallog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section .contentbox .loginformbox .sociallog li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #607d8b;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+  }
+  section .contentbox .loginformbox .sociallog li:hover {
+    background: var(--second-color);
+  }
+  section .contentbox .loginformbox .sociallog li .bx{
+    transform: scale(1.4);
+    filter: invert(1);
+  }
+
+
+
+
+/*responsive*/
+@media (max-width:1060px){
+    .container {
+        margin: 0 auto;
+        width: 95%;
+    }
+    .home-text {
+        width: 100%;
+    }
+}
+@media (max-width: 800px){
+    .nav {
+        padding: 14px 0;
+    }
+    .post-container {
+        margin: 0 auto;
+        width: 95%;
+    }
+}
+@media (max-width: 768px){
+    .nav {
+        padding: 1opx 0;
+    }
+    section {
+       padding: 2rem 0;
+    }
+    .header-content {
+        margin-top: 3rem !important;
+    }
+    .home {
+        min-height: 380px;
+    }
+    .home-title {
+        font-size: 3rem;
+    }
+    .header-title {
+        font-size: 2rem;
+    }
+    .header-img {
+        height: 370px;
+    }
+    .post-header {
+        height: 435px;
+    }
+    .post-content {
+        margin-top: 9rem !important;
+    }
+}
+@media (max-width: 570px){
+    .post-header {
+        height: 390px;
+    }
+    .header-title {
+        width: 100%;
+    }
+    .header-img {
+        height: 340px;
+    }
+    .footer {
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 20px 0;
+        text-align: center;
+    }
+}
+@media (max-width: 396px){
+    .home-title {
+     font-size: 2rem;
+    }
+    .home-subtitle {
+        font-size: 0.9rem;
+    }
+    .home {
+        min-height: 300px;
+    }
+    .post-box {
+        padding: 10px;
+    }
+    .header-title {
+        font-size: 1.4rem;
+    }
+    .header-img {
+        height: 240px;
+    }
+    .post-header {
+        height: 335px;
+    }
+    .post-content{
+        margin-top: 5rem !important;
+    }
+    .post-text {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        margin: 10px 0;
+    }
+}
+
+/*login*/
+@media (max-width: 768px){
+    section .imgbox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .contentbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .contentbox .loginformbox{
+        width: 100%;
+        padding: 40px;
+        background: rgb(255 255 255 / 0.9);
+        margin: 50px;
+    }
+    section .contentbox .loginformbox h3 {
+        color: #607d8b;
+        text-align: center;
+        margin: 30px 0 10px;
+        font-weight: 500;
+    }
+}
+
+.custom-button {
+    padding: 15px 30px; /* Increase padding for larger size */
+    background-color: orange; /* Change background color to orange */
+    color: #ffffff;
+    border: none;
+    border-radius: 20px; /* Make border rounded */
+    cursor: pointer;
+    font-size: 16px;
+    width: 370px; /* Set width to 200px */
+  }
+  
+  .custom-button:hover {
+    background-color: #b38300;
+  }
+  
+  .custom-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fffb00;
+  }
+  

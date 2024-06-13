@@ -1,0 +1,56 @@
+
+    <br>
+    <br>
+    <br>
+
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css">
+    <section>
+        <div class="imgbox">
+            <img src="https://startamomblog.com/wp-content/uploads/2021/08/pexels-teona-swift-6913727-scaled.jpg">
+        </div>
+        <div class="contentbox">
+            <div class="loginformbox">
+                <h2>Welcome back!</h2>
+                <form (ngSubmit)="login()">
+  <!-- Username input -->
+  <div class="inputbox">
+    <span>Username</span>
+    <input type="text" name="username" [(ngModel)]="username" required>
+  </div>
+  
+  <!-- Password input -->
+  <div class="inputbox">
+    <span>Password</span>
+    <input type="password" name="password" [(ngModel)]="password" required>
+  </div>
+
+  <!-- Remember me checkbox -->
+  <div class="remember">
+    <label><input type="checkbox" name="rememberMe"> Remember me </label>
+  </div>
+<br>
+  <!-- Submit button -->
+  <div class="inputbox">
+    <button type="submit" class="custom-button">Sign in</button>
+  </div>
+  
+  <!-- Link to sign up -->
+  <div class="inputbox">
+    <p>Don't have an account? <a routerLink="/signup">Sign up</a></p>
+  </div>
+</form>
+
+                  
+                <h3>Login with Social media</h3>
+                <ul class="sociallog">
+                    <li><i class='bx bxl-facebook'></i></li>
+                    <li><i class='bx bxl-twitter'></i></li>
+                    <li><i class='bx bxl-instagram'></i></li>
+                    <li><i class='bx bxl-linkedin'></i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    

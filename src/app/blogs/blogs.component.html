@@ -1,0 +1,25 @@
+
+<header class="masthead" style="background-image: url('https://wallpaperaccess.com/full/640842.jpg')">
+  <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+              <div class="site-heading">
+                  <h1>Unlocking the Mysteries of Space and Science</h1>
+                  <span class="subheading">Experience the thrill of scientific discovery through engaging and informative content.</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+<section class="post container">
+  <div class="post-box Gadgets" *ngFor="let blog of blogs; let i = index">
+    <img [src]="blog.url" alt="" class="post-img"> <!-- Use the 'url' property for the image -->
+    <br><br>
+    <div class="post-title-container post-title">{{ blog.title }}</div>
+    <br>
+    <b><span class="post-score">{{ blog.date | date:'medium' }}</span> </b>
+    <br>
+    <p class="post-explanation">{{ blog.explanation }}</p> 
+  
+  </div>
+</section>

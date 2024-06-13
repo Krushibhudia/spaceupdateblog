@@ -1,0 +1,13 @@
+<section class="post-header" *ngIf="!loading && !error">
+  <div class="header-content post-container">
+    <a routerLink="/blogs" class="back-home">Back To Home</a>
+    <h1 class="header-title">{{ blog?.title }}</h1>
+    <img [src]="blog?.url" alt="" class="header-img">
+  </div>
+</section>
+<section class="post-content post-container" *ngIf="!loading && !error">
+  <p class="post-text">{{ blog?.explanation }}</p>
+</section>
+
+<div *ngIf="loading">Loading...</div>
+<div *ngIf="error">{{ error }}</div>
